@@ -1,0 +1,33 @@
+
+package centtoinch;
+/**
+ *Author: Oliver Arauz
+ */
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class CentToInch {
+    /**
+     * This program converts centimeters to inches
+     */
+    public static void main(String[] args) throws Exception{
+        // TODO code application logic here
+    final double I=2.54; //**Constant Inch Measure*/
+          double C; //**Centimeters*/
+          double R; //**Result*/
+    
+          BufferedReader br=new BufferedReader(new InputStreamReader(System.in));    
+    
+    System.out.println("Este programa calcula de centimetros a pulgadas\n");
+    System.out.print("Ingrese centimetros: ");   //pide datos, ingresar datos
+    C=Double.parseDouble(br.readLine());   //**se leen y convierten los datos a Double*/    
+    
+    R=C/I;
+    
+    //System.out.println("El resultado es: "+R+" Pulgadas");//optional
+    System.out.printf("%nEl resultado es: %.2f pulgadas%n",R);
+    
+    }
+    
+}
